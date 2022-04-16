@@ -27,7 +27,7 @@ void informarResultadosAerolineas(float kilometrosIngresados, float precio, floa
 
 void informarResultadosLatam(float precio, float precioConDescuento, float precioConAumento, float precioConBitcoin, float precioPorKilometro)
 {
-    if(precio > 0)
+    if(precio >= 1)
     {
         printf("Precio Latam: $%.2f\na) Precio con tarjeta de debito: $%.2f\nb) Precio con tarjeta de credito: $%.2f\nc) Precio pagando con bitcoin: %f BTC\nd) Mostrar precio unitario: $%.2f\n\n", precio, precioConDescuento, precioConAumento, precioConBitcoin, precioPorKilometro);
     }
